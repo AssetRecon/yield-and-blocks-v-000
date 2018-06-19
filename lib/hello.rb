@@ -1,5 +1,6 @@
 def hello_t(array)
-  i = 0
+  if block_given?
+    i = 0
 
   while i < array.length
     yield(array[i])
@@ -7,6 +8,6 @@ def hello_t(array)
   end
 
   array
+  end
 end
-
 # call your method here!
